@@ -5,7 +5,7 @@ async function run() {
   try {
     const issueTitle = core.getInput('issue-title')
     const jokeBody = core.getInput('joke')
-    const toke = core.getInput('repo-token')
+    const token = core.getInput('repo-token')
 
     const octokit = new github.Github(token)
 
